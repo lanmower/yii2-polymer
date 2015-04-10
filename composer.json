@@ -1,6 +1,6 @@
 {
-    "name": "polymer/polymer",
-    "description": "Polymer extension for Yii 2.0",
+    "name": "almagestfraternite/yii2-polymer",
+    "description": "Polymer for Yiii 2.0",
     "type": "yii2-extension",
     "keywords": ["yii2","extension"],
     "license": "BSD-4-Clause",
@@ -15,8 +15,7 @@
     },
     "autoload": {
         "psr-4": {
-            "polymer\\polymer\\widgets\\": "",
-            "polymer\\polymer\\components\\": ""
+            "polymer\\widgets": ""
         }
     }
 }
