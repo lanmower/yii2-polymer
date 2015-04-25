@@ -23,6 +23,11 @@ class CoreIcon extends PolymerWidget {
 		return parent::init ();
 	}
 	
+	public $src = '/images/icons/android.svg';
+	public function init() {
+		$this->htmlOptions ['src'] = $this->src;
+		return parent::init ();
+	}
 }
 ?>
 

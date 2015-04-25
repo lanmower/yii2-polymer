@@ -1,22 +1,13 @@
 <?php
 
-namespace polymer\polymer\widgets;
+namespace polymer\widgets;
 
-use polymer\polymer\components\PolymerAssets;
-class PolymerWidget extends \yii\base\Widget
-{
+use polymer\components\PolymerAssets;
+use yii\helpers\Html;
+class PolymerWidget extends \yii\base\Widget {
 	protected static $_assets;
-
-    public function __construct(array $config) {
-    	if(!self::$_assets) {
-    		self::$_assets = PolymerAssets::register($view);
-    	}
-    }
-    
-    public function getAssets() {
-    	return $_assets;
-    }
 	public $htmlOptions=[];
+
 	public function __construct(array $config = []) {
 		if (! self::$_assets) {
 			self::$_assets = PolymerAssets::register ( $this->getView () );
@@ -29,9 +20,6 @@ class PolymerWidget extends \yii\base\Widget
 			$tConfig[$key] = $value;
 		}
 		parent::__construct ( $tConfig );
-	}
-	public function getAssets() {
-		return self::$_assets;
 	}
 	
 	/**

@@ -10,4 +10,5 @@ use yii\widgets\ActiveForm;
 class CoreToolbar extends PolymerWidget
 {
 	public $tag = 'core-toolbar';
+	public static $import;
 }
