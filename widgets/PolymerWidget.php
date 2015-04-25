@@ -7,6 +7,8 @@ class PolymerWidget extends \yii\base\Widget
 {
 	protected static $_assets;
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 
     public function __construct(array $config) {
     	if(!self::$_assets) {
@@ -18,6 +20,10 @@ class PolymerWidget extends \yii\base\Widget
     	return $_assets;
     }
 =======
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 	public $htmlOptions=[];
 	public function __construct(array $config = []) {
 		if (! self::$_assets) {
