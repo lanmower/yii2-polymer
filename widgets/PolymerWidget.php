@@ -6,9 +6,6 @@ use polymer\polymer\components\PolymerAssets;
 class PolymerWidget extends \yii\base\Widget
 {
 	protected static $_assets;
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
 
     public function __construct(array $config) {
     	if(!self::$_assets) {
@@ -19,11 +16,6 @@ class PolymerWidget extends \yii\base\Widget
     public function getAssets() {
     	return $_assets;
     }
-=======
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 	public $htmlOptions=[];
 	public function __construct(array $config = []) {
 		if (! self::$_assets) {
@@ -60,5 +52,4 @@ class PolymerWidget extends \yii\base\Widget
 		echo Html::endTag ( $this->tag );
 		return parent::init ();
 	}
->>>>>>> Stashed changes
 }
